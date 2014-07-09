@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+<head>
+    <vtex:metaTags />
+    <vtex:template id="header-tags" />
+    <link rel="stylesheet" type="text/css" href="/arquivos/x-department.css" />
+    <script type="text/javascript" src="/arquivos/x-department.js"></script>
+</head>
+<body>
+    <div class="x-wrapper">
+        <vtex:template id="x-header" />
+        <div class="x-main">
+            <div class="x-container">
+                <vtex.cmc:breadCrumb />
+                <sidebar class="sidebar">
+                    <div class="nav-left"><vtex.cmc:singleDepartmentNavigator /></div>
+                </sidebar>
+                <section class="search-results">
+                    <div class="banner-topo"><vtex:contentPlaceHolder id="banner-topo" /></div>
+                    <div class="vitrine-department">
+                        <vtex.cmc:searchTitle />
+                        <vtex.cmc:searchResult layout="?" itemCount="12" columnCount="4" />
+                    </div><!--vitrine-department-->
+                </section>
+
+                <div class="history" style="display:none;"><vtex.cmc:navigationHistory /></div>
+            </div>
+        </div><!-- x-main -->
+        <vtex:template id="x-footer" />
+    </div>
+</body>
+</html>

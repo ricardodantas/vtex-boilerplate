@@ -13,21 +13,11 @@ module.exports = function(grunt) {
         clean: {
             main: ['build']
         },
-        // copy: {
-        //     main: {
-        //         files: [{
-        //             expand: true,
-        //             cwd: 'assets/',
-        //             src: ['assets/'],
-        //             dest: "build/"
-        //         }]
-        //     }
-        // },
         coffee: {
             main: {
                 files: [{
                     expand: true,
-                    cwd: 'assets/coffeescript/',
+                    cwd: 'src/assets/coffeescript/',
                     src: ['**/*.coffee'],
                     dest: "build/assets/js/",
                     ext: '.js'
@@ -37,9 +27,9 @@ module.exports = function(grunt) {
         compass: {
             dist: {
                 options: {
-                    sassDir: 'assets/scss/',
+                    sassDir: 'src/assets/scss/',
                     cssDir: 'build/assets/css/',
-                    imagesDir: 'assets/img/',
+                    imagesDir: 'src/assets/img/',
                     environment: 'production'
                 }
             }
@@ -51,9 +41,9 @@ module.exports = function(grunt) {
             main: {
                 files: [{
                     expand: true,
-                    cwd: 'build/',
+                    cwd: 'build/assets/js/',
                     src: ['*.js', '!*.min.js'],
-                    dest: 'build/',
+                    dest: 'build/assets/js/',
                     ext: '.min.js'
                 }]
             }
@@ -62,20 +52,17 @@ module.exports = function(grunt) {
             main: {
                 files: [{
                     expand: true,
-                    cwd: 'assets/img/',
+                    cwd: 'src/assets/img/',
                     src: ['**/*.{png,jpg,gif}'],
                     dest: 'build/assets/img'
-                }],
-                options: {
-                    cache: false
-                }
+                }]
             }
         },
         sprite: {
             all: {
-                src: 'assets/img/sprite/*.png',
-                destImg: 'assets/img/spritesheet.png',
-                destCSS: 'assets/scss/_sprites.scss',
+                src: 'src/assets/img/sprite/*.png',
+                destImg: 'build/assets/img/spritesheet.png',
+                destCSS: 'src/assets/scss/_sprites.scss',
                 cssFormat: 'scss'
             }
         },
@@ -84,7 +71,7 @@ module.exports = function(grunt) {
                 options: {
                     hostname: "*",
                     open: open,
-                    port: process.env.PORT || 80,
+                    port: process.env.PORT || 8080,
                     middleware: [
                         require('connect-livereload')({
                             disableCompression: true
@@ -104,35 +91,35 @@ module.exports = function(grunt) {
         },
         watch: {
             options: {
-                livereload: true
+                livereload: 1337
             },
             coffee: {
-                files: ['assets/coffeescript/**/*.coffee'],
+                files: ['src/assets/coffeescript/**/*.coffee'],
                 tasks: ['coffee']
             },
             compass: {
                 options: {
                     livereload: false
                 },
-                files: ['assets/scss/**/*.scss'],
+                files: ['src/assets/scss/**/*.scss'],
                 tasks: ['compass']
             },
             images: {
-                files: ['assets/img/**/*.{png,jpg,gif}'],
+                files: ['src/assetsimg/**/*.{png,jpg,gif}'],
                 tasks: ['imagemin']
             },
             css: {
                 files: ['build/css/**/*.css']
-            },
-            main: {
-                files: ['templates/**/*.html', 'src/**/*.js', 'src/**/*.css'],
-                tasks: ['copy']
             }
+            // main: {
+            //     files: ['src/templates/**/*.html', 'src/**/*.js', 'src/**/*.css'],
+            //     tasks: ['copy']
+            // }
 
         }
     };
     tasks = {
-        build: ['clean', 'sprite', 'coffee', 'compass', 'imagemin'],
+        build: ['clean', 'sprite', 'compass', 'coffee', 'imagemin'],
         min: ['uglify'],
         dist: ['build', 'min'],
         test: [],

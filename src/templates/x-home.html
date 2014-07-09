@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+<head>
+    <vtex:metaTags />
+    <vtex:template id="header-tags" />
+    <link rel="stylesheet" type="text/css" href="/arquivos/x-home.css" />
+    <script type="text/javascript" src="/arquivos/x-home.js"></script>
+</head>
+<body>
+    <div class="x-wrapper">
+        <vtex:template id="x-header" />
+        <div class="x-main">
+            <div class="x-container">
+                <div class="slider-wrapper">
+                    <div class="slider"><vtex:contentPlaceHolder id="banner-slider" /></div>
+                    <div class="slider-nav">
+                        <a href="#" class="slider-nav-prev">Previous</a>
+                        <a href="#" class="slider-nav-next">Next</a>
+                    </div><!--slider-nav-->
+                    <div class="slider-control"></div><!--slider-control-->
+                </div><!--slider-wrapper-->
+                <div class="brands-carousel"><vtex:contentPlaceHolder id="marcas" /></div>
+                <div class="collections"><vtex:contentPlaceHolder id="colecoes" /></div>
+            </div>
+        </div><!-- x-main -->
+        <vtex:template id="x-footer" />
+    </div><!-- x-wrapper -->
+</body>
+</html>
