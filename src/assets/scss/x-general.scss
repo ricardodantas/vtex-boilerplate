@@ -1,0 +1,66 @@
+/* # x-general.css
+Includes footer, header and all general classes.
+*/
+@import "x-header";
+@import "x-footer";
+
+
+
+/*
+## #x-main
+
+For the main container.
+
+````
+<header id="x-header"></header>
+
+<div id="x-main"></div>
+
+<footer id="x-footer"></footer>
+````
+*/
+#x-main{
+
+}
+
+
+/*
+## .x-wrapper
+
+For general wrapper containers.
+
+````
+<header id="x-header"></header>
+
+<div id="x-main">
+    <div class="x-wrapper"></div>
+</div>
+
+<footer id="x-footer"></footer>
+````
+*/
+.x-content{
+
+}
+
+
+/*
+## .x-content
+
+For general content containers.
+
+````
+<header id="x-header"></header>
+
+<div id="x-main">
+    <div class="x-wrapper">
+        <div class="x-content"></div>
+    </div>
+</div>
+
+<footer id="x-footer"></footer>
+````
+*/
+.x-content{
+
+}

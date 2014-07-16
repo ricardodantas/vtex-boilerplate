@@ -1,4 +1,4 @@
-vtex-boilerplate
+Vtex Boilerplate
 ===============
 
 Estrutura para desenvolvimento rápido de lojas para a  plataforma de e-commerce Vtex.
@@ -6,3 +6,5 @@ Estrutura para desenvolvimento rápido de lojas para a  plataforma de e-commerce
 ***
 
 Use, compartilhe e colabore!
+
+***

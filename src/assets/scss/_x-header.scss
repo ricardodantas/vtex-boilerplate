@@ -1,0 +1,177 @@
+/*
+# x-header.css
+Header main file. All the classes and IDs will be in this file.
+
+**WARNING: All the classes bellow are required.**
+
+***
+
+*/
+@import  "compass/reset";
+@import  "compass/css3";
+
+/*
+* Include all required Vtex components.
+*/
+@import "vtex-components/general/_AmountItemsInCart.scss";
+@import "vtex-components/general/_departmentLinks.scss";
+@import "vtex-components/general/_departmentNavigator.scss";
+@import "vtex-components/general/_newsletterOptIn.scss";
+@import "vtex-components/general/_fullTextSearchBox.scss";
+
+
+/*
+* Include all the config files for the classes and IDs bellow.
+*/
+@import "config/header";
+@import "config/logo";
+
+
+/*
+## #x-header
+The main header element.
+
+````
+<header id="x-header"></header>
+````
+*/
+header#x-header{
+
+}
+
+
+/*
+## #x-header-wrapper
+
+````
+<header id="x-header">
+    <div id="x-header-wrapper"></div>
+</header>
+````
+*/
+#x-header-wrapper{
+
+}
+
+
+
+/*
+## .x-top-nav-bar
+````
+<header id="x-header">
+    <div id="x-header-wrapper">
+        <div class="x-top-nav-bar"></div>
+    </div>
+</header>
+````
+*/
+.x-top-nav-bar{
+
+}
+
+/*
+## .x-top-nav-bar-wrapper
+````
+<header id="x-header">
+    <div id="x-header-wrapper">
+        <nav class="x-top-nav-bar">
+            <ul class="x-top-nav"></ul>
+        </nav>
+    </div>
+</header>
+````
+*/
+.x-top-nav-bar-wrapper{
+
+}
+
+
+
+
+
+/*
+## .x-logo
+For the store logo style.
+
+````
+<header id="x-header">
+    <div id="x-header-wrapper">
+        <div class="x-container">
+            <h1 class="x-logo">
+                <a href="/" title="Store Title">Store Title</a>
+            </h1>
+        </div>
+    </div>
+</header>
+````
+*/
+.x-logo{
+    display: inline-block;
+    width: $logo_width;
+    height: $logo_height;
+    a{
+        background: url($logo_src) no-repeat;
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        overflow: hidden;
+        text-indent: 200%;
+    }
+}
+
+
+
+
+/*
+## #x-menu
+The main menu.
+
+````
+<header id="x-header">
+    <div id="x-header-wrapper">
+        <nav id="x-menu"></nav>
+    </div>
+</header>
+````
+*/
+#x-menu{
+
+}
+
+
+
+
+/*
+## #x-header-search
+The header's search element.
+
+````
+<header id="x-header">
+    <div id="x-header-wrapper">
+        <div id="x-header-search"></div>
+    </div>
+</header>
+````
+*/
+.x-header-search{
+
+}
+
+
+/*
+## #x-header-cart
+The header's cart element.
+
+````
+<header id="x-header">
+    <div id="x-header-wrapper">
+            <div class="x-content">
+                <div id="x-header-cart"></div>
+            </div>
+    </div>
+</header>
+````
+*/
+#x-header-cart{
+
+}

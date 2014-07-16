@@ -1,56 +1,44 @@
-<header id="header">
-    <div class="x-header">
-    <div class="x-top-nav-bar">
-        <div class="x-top-nav ">
-            <ul class="">
+<header id="x-header">
+
+    <div id="x-header-wrapper">
+
+        <nav class="x-top-nav-bar">
+
+            <ul class="x-top-nav-bar-wrapper">
                 <li class="nossas-lojas"><a title="Nossas Lojas" href="/nossas-lojas">Nossas Lojas</a></li>
                 <li class="fale-conosco"><a title="Central de Atendimento" href="/atendimento">Central de Atendimento</a></li>
                 <li class="welcome"><vtex.cmc:welcomeMessage/></li>
                 <li class="meus-dados"><a title="Meu Cadastro" href="/Vitrine/MinhaConta/MinhaConta.aspx">Meu Cadastro</a></li>
                 <li class="meus-pedidos last"><a title="Meus Pedidos" href="/Site/MeusPedidos.aspx">Meus Pedidos</a></li>
             </ul>
-        </div>
-    </div><!--Fecha x-top-bar-->
 
-    <div class="x-container ">
+        </nav>
+        <!--Fecha x-top-bar-->
+
 
         <h1 class="x-logo">
-            <a href="/" title="Foot Company | Calçados e Muito mais">Foot Company | Calçados e Muito mais</a>
+            <a href="/" title="Store Title">Store Title</a>
         </h1>
 
-        <div class="x-header-content ">
-
-            <!--x-top-bar-->
-            <div class="x-top-bar ">
-                <div class="header-banner"></div>
-            </div>
-            <!--/x-top-bar-->
-
-            <!--x-top-search-->
-            <div class="x-top-search">
-                <vtex.cmc:fullTextSearchBox />
-            </div>
-            <!--/x-top-search-->
-
-            <!--x-cart -->
-            <div class="x-cart x-cart-container">
-                <vtex.cmc:AmountItemsInCart />
-            </div>
-            <!--/x-cart -->
-
+        <!--x-top-search-->
+        <div id="x-header-search">
+            <vtex.cmc:fullTextSearchBox />
         </div>
-        <!--Fecha x-header-content-->
+        <!--/x-top-search-->
+
+        <!--x-header-cart -->
+        <div id="x-header-cart">
+            <vtex.cmc:AmountItemsInCart />
+        </div>
+        <!--/x-header-cart -->
+
+        <!--x-menu-->
+        <nav id="x-menu">
+            <vtex.cmc:departmentNavigator/>
+        </nav>
+        <!--/x-menu-->
 
     </div>
-    <!--/x-container -->
-
-    <!--x-menu-->
-    <div class="x-menu">
-        <vtex.cmc:departmentNavigator/>
-    </div>
-    <!--/x-menu-->
-
-</div>
-<!--/x-header-->
+    <!--/x-header-wrapper-->
 
 </header>
