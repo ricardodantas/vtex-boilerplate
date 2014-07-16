@@ -3,17 +3,19 @@
 <head>
     <vtex:metaTags />
     <vtex:template id="header-tags" />
-    <link rel="stylesheet" type="text/css" href="/arquivos/x-standard.css" />
-    <script type="text/javascript" src="/arquivos/x-standard.js"></script>
+    <link rel="stylesheet" type="text/css" href="/arquivos/x-product.css" />
+    <script type="text/javascript" src="/arquivos/x-product.js"></script>
 </head>
 <body>
 
-<vtex:template id="x-header" />
+    <vtex:template id="x-header" />
 
     <section class="x-main">
 
         <div class="x-wrapper">
-            <vtex:contentPlaceHolder id="Conteudo" />
+
+            <div class="brands-carousel"><vtex:contentPlaceHolder id="marcas" /></div>
+            <div class="collections"><vtex:contentPlaceHolder id="colecoes" /></div>
         </div>
 
     </section><!-- x-wrapper -->

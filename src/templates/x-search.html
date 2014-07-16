@@ -3,15 +3,17 @@
 <head>
     <vtex:metaTags />
     <vtex:template id="header-tags" />
-    <link rel="stylesheet" type="text/css" href="/arquivos/x-department.css" />
-    <script type="text/javascript" src="/arquivos/x-department.js"></script>
+    <link rel="stylesheet" type="text/css" href="/arquivos/x-search.css" />
+    <script type="text/javascript" src="/arquivos/x-search.js"></script>
 </head>
 <body>
-    <div class="x-wrapper">
-        <vtex:template id="x-header" />
-        <div class="x-main">
-            <div class="x-container">
-                <vtex.cmc:breadCrumb />
+
+<vtex:template id="x-header" />
+
+    <section class="x-main">
+
+        <div class="x-wrapper">
+            <vtex.cmc:breadCrumb />
                 <sidebar class="sidebar">
                     <div class="nav-left"><vtex.cmc:singleDepartmentNavigator /></div>
                 </sidebar>
@@ -24,9 +26,11 @@
                 </section>
 
                 <div class="history" style="display:none;"><vtex.cmc:navigationHistory /></div>
-            </div>
-        </div><!-- x-main -->
-        <vtex:template id="x-footer" />
-    </div>
+        </div>
+
+    </section><!-- x-wrapper -->
+
+    <vtex:template id="x-footer" />
+
 </body>
 </html>
