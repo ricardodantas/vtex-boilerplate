@@ -14,18 +14,20 @@
 
         <div class="x-wrapper">
             <vtex.cmc:breadCrumb />
-                <sidebar class="sidebar">
-                    <div class="nav-left"><vtex.cmc:singleDepartmentNavigator /></div>
+                <sidebar class="x-sidebar">
+                    <div class="x-sidebar-wrapper">
+                        <vtex.cmc:singleDepartmentNavigator />
+                    </div>
                 </sidebar>
-                <section class="search-results">
+                <section class="x-search-results">
                     <div class="banner-topo"><vtex:contentPlaceHolder id="banner-topo" /></div>
-                    <div class="vitrine-department">
+                    <div class="x-storefront search">
                         <vtex.cmc:searchTitle />
                         <vtex.cmc:searchResult layout="?" itemCount="12" columnCount="4" />
                     </div><!--vitrine-department-->
                 </section>
 
-                <div class="history" style="display:none;"><vtex.cmc:navigationHistory /></div>
+                <div class="x-history" style="display:none;"><vtex.cmc:navigationHistory /></div>
         </div>
 
     </section><!-- x-wrapper -->

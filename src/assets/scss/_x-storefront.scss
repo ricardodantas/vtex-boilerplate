@@ -1,0 +1,23 @@
+@import "compass/css3";
+
+.x-storefront {
+    .x-item-wrapper {}
+    .x-image {}
+    .x-title {}
+    .x-description-short {}
+    .x-price {
+        .x-old-price {
+            span {}
+        }
+        .x-new-price {
+            strong {}
+        }
+        .x-installment {
+            strong {}
+        }
+    }
+    .x-button {
+        &.buy {}
+        &.quickshop {}
+    }
+}

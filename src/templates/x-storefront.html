@@ -2,40 +2,37 @@
 #set($uri = $product.Uri)
 #set($escapedName = $product.HtmlEscapedName)
 #set($evaluationRate = $product.EvaluationRate)
-<div class="x-shelf-wrapper" id="$id">
-    <div class="x-shelf-image-container">
-        <a class="x-shelf-image" title="$escapedName" href="$uri">$product.GetImageTag(29)</a>
-    </div>
-    <div class="x-shelf-content">
-        <h3><a title="$escapedName" href="$uri">$product.Name</a></h3>
-        <div id="rating-product-$id" class="x-shelf-rating avaliacao$evaluationRate">$evaluationRate</div>
-        <div class="x-shelf-description-short">$product.DescriptionShort</div>
-        #if ($product.IsInStock)
-            <p class="x-shelf-price">
-                <a title="$escapedName" href="$uri">
-                    #if ($product.HasBestPrice)
-                        <span class="x-old-price">De <span>$product.ListPrice</span></span>
-                        <span class="x-new-price">Por <strong>$product.BestPrice</strong></span>
-                    #else
-                        <span class="x-new-price"><strong>$product.BestPrice</strong></span>
-                    #end
+<div class="x-item-wrapper" id="item-$id">
 
-                    #if ($product.NumbersOfInstallment > 1)
-                    <span class="x-installment">
-                        ou ${product.NumbersOfInstallment}x de <strong>$product.InstallmentValue</strong>
-                    </span>
-                    #end
-                </a>
-            </p>
-            <div class="x-shelf-button">$product.BottomBuy</div>
+    <div class="x-image">
+        <a title="$escapedName" href="$uri">$product.GetImageTag(29)</a>
+    </div>
+    <div class="x-content">
+        <h3 class="x-title"><a title="$escapedName" href="$uri">$product.Name</a></h3>
+        <div id="rating-product-$id" class="x-rating avaliacao-$evaluationRate">$evaluationRate</div>
+        <p class="x-description-short">$product.DescriptionShort</p>
+        #if ($product.IsInStock)
+        <div class="x-price">
+            <a title="$escapedName" href="$uri">
+                #if ($product.HasBestPrice)
+                <p class="x-old-price">De <span>$product.ListPrice</span></p>
+                <p class="x-new-price">Por <strong>$product.BestPrice</strong></p>
+                #else
+                <p class="x-new-price"><strong>$product.BestPrice</strong></p>
+                #end
+
+                #if ($product.NumbersOfInstallment > 1)
+                <p class="x-installment">
+                    ou ${product.NumbersOfInstallment}x de <strong>$product.InstallmentValue</strong>
+                </p>
+                #end
+            </a>
+        </div>
+        <div class="x-button buy">$product.BottomBuy</div>
         #else
-            <div class="x-out-of-stock">
-                <a title="$escapedName" href="$uri">avise-me quando disponível</a>
-            </div>
+        <div class="x-out-of-stock">avise-me quando disponível</div>
         #end
-        <p class="x-shelf-category"><a href="$product.CategoryLink">$product.CategoryName</a></p>
-        <p class="x-shelf-brand">$product.BrandLink</p>
     </div>
     <div class="x-discount">$product.DiscountHightLight</div>
-    <a class="x-btn-quickview" rel="nofollow" href="/quick-view/?idproduto=$id">Espiar</a>
+    <a class="x-button quickview" rel="nofollow" href="/quick-view/?idproduto=$id">Espiar</a>
 </div>
