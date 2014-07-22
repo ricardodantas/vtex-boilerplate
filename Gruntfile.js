@@ -89,6 +89,16 @@ module.exports = function(grunt) {
                 }
             }
         },
+        styledocco: {
+            dist: {
+                options: {
+                    name: 'Vtex Boilerplate'
+                },
+                files: {
+                    'docs': 'src/assets/scss'
+                }
+            }
+        },
         watch: {
             options: {
                 livereload: 1337
@@ -102,7 +112,7 @@ module.exports = function(grunt) {
                     livereload: false
                 },
                 files: ['src/assets/scss/**/*.scss'],
-                tasks: ['compass']
+                tasks: ['compass', 'styledocco']
             },
             images: {
                 files: ['src/assetsimg/**/*.{png,jpg,gif}'],
@@ -119,10 +129,11 @@ module.exports = function(grunt) {
         }
     };
     tasks = {
-        build: ['clean', 'sprite', 'compass', 'coffee', 'imagemin'],
+        build: ['clean', 'sprite', 'compass', 'coffee', 'imagemin', 'styledocco'],
         min: ['uglify'],
         dist: ['build', 'min'],
         test: [],
+        doc: ['styledocco'],
         "default": ['build', 'connect', 'watch'],
         devmin: ['build', 'min', 'connect:http:keepalive']
     };

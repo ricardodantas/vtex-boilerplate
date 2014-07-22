@@ -33,6 +33,7 @@
         "grunt-contrib-imagemin": "^0.7.1",
         "grunt-contrib-uglify": "*",
         "grunt-contrib-watch": "~0.5.1",
-        "grunt-spritesmith": "^1.26.0"
+        "grunt-spritesmith": "^1.26.0",
+        "grunt-styledocco": "^0.1.4"
     }
 }
