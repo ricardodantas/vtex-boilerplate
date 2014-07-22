@@ -14,8 +14,76 @@
 
         <div class="x-wrapper">
 
-            <div class="brands-carousel"><vtex:contentPlaceHolder id="marcas" /></div>
-            <div class="collections"><vtex:contentPlaceHolder id="colecoes" /></div>
+            <div class="x-product-header">
+
+                <div class="x-product-gallery">
+                    <vtex.cmc:ProductImage zoom="on"/>
+                </div>
+
+                <div class="x-product-info">
+                    <h1 class="x-title"><vtex.cmc:productName/></h1>
+
+                    <span class="x-reference"><vtex.cmc:productReference/></span>
+                    <!-- or SKU reference -->
+                    <!-- <span class="x-reference"><vtex.cmc:skuReference/></span> -->
+
+                    <span class="x-rating"><vtex.cmc:evaluationRate/></span>
+
+                    <div class="x-description"><vtex.cmc:productDescriptionShort /></div>
+
+                    <div class="x-price"><vtex.cmc:skuPrice/></div>
+
+                    <div class="x-sku-selection"><vtex.cmc:skuRichSelection changeImage="1" /></div>
+
+                    <div class="x-payment-methods"><vtex.cmc:OtherPaymentMethod/></div>
+
+                    <div class="x-delivery">
+                        <vtex.cmc:Delivery/>
+                        <vtex.cmc:shippingValue/>
+                    </div>
+
+                    <div class="x-social"><vtex.cmc:facebookLike /></div>
+
+                    <dix class="x-button buy">
+                        <vtex.cmc:BuyButton/>
+                    </dix>
+
+                </div>
+
+
+            </div>
+
+            <div class="x-buy-together">
+                <vtex.cmc:BuyTogether/>
+            </div>
+
+            <div class="x-product-content">
+                <div class="x-description"><vtex.cmc:ProductDescription/></div>
+                <div class="x-specs">
+
+                    <vtex.cmc:productSpecification/>
+
+                    <vtex.cmc:stockKeepingUnitMeasures/>
+                </div>
+            </div>
+
+            <div class="x-carousel x-qvvt">
+                <vtex:contentPlaceHolder id="ColecaoQVVT" />
+            </div>
+
+            <div class="x-carousel x-qvct">
+                <vtex:contentPlaceHolder id="ColecaoQVCT" />
+            </div>
+
+            <div class="x-carousel x-qcct">
+                <vtex:contentPlaceHolder id="ColecaoQCCT" />
+            </div>
+
+            <div class="x-reviews">
+                <vtex.cmc:UserReview/>
+            </div>
+
+
         </div>
 
     </section><!-- x-wrapper -->

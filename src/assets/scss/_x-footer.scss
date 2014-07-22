@@ -1,0 +1,148 @@
+/*
+# _x-footer.scss
+This is an include file, which goes into the **x-general.css**. All the classes and IDs must be in this file.
+
+**WARNING: All the classes bellow are required.**
+
+***
+
+*/
+@import "compass/css3";
+
+/*
+* Include all the config files for the classes and IDs bellow.
+*/
+@import "config/footer";
+
+
+#x-footer {
+
+/*
+## .x-newsletter
+The newsletter box settings.
+*/
+    .x-newsletter {
+
+        .newsletter {
+            fieldset{
+                p{}
+            }
+        }
+
+        .newsletter-client-name {
+        }
+
+        .newsletter-client-email {
+        }
+
+        .btn-ok {
+        }
+
+        .newsletter-button-ok {
+        }
+
+        .btn {
+        }
+
+        .newsletter-loading {
+        }
+
+        .newsletter-success {
+        }
+
+        .newsletter-success2 {
+        }
+
+        .newsletter-error {
+        }
+
+        .rt {
+        }
+
+        .rb {
+        }
+
+        .lb {
+        }
+
+        .lt {
+        }
+    }
+
+/*
+## .x-footer-logo
+The store's logo for the footer.
+*/
+    .x-footer-logo {}
+
+/*
+## .x-footer-nav
+Footer navegation wrapper.
+*/
+    .x-footer-nav {}
+
+
+/*
+## .x-col
+The columns containers.
+*/
+    .x-col {
+        @for $col from 0 through 3 {
+          &.x-col-#{$col} {
+                .x-footer-title {}
+                dl {
+                    dd {
+                        a {}
+                    }
+                }
+            }
+        }
+    }
+
+
+
+/*
+## .payment-methods
+The payment container.
+*/
+    .payment-methods {
+        @each $method in visa,mastercard,dinners,boleto {
+          .#{$method} {
+            display: inline-block;
+            background-image: url('../img/#{$method}.png');
+          }
+        }
+    }
+/*
+
+## .social-networks
+
+The social network wrapper element.
+
+*/
+    .social-networks {
+        .pinterest {}
+        .twitter {}
+        .facebook {}
+    }
+/*
+## .digiCert
+The security badge element, added in the HTML structure by default.
+*/
+    .digiCert {
+        a {}
+    }
+/*
+## .x-site-info
+All the additional information about the site.
+*/
+    .x-site-info {
+        .x-rights {
+            p {}
+        }
+/*
+## .powered-by-vtex
+*/
+        .powered-by-vtex {}
+    }
+}

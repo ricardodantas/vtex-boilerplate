@@ -61,8 +61,8 @@ module.exports = function(grunt) {
         sprite: {
             all: {
                 src: 'src/assets/img/sprite/*.png',
-                destImg: 'build/assets/img/spritesheet.png',
-                destCSS: 'src/assets/scss/_sprites.scss',
+                destImg: 'build/assets/img/x-sprite.png',
+                destCSS: 'src/assets/scss/_x-sprite.scss',
                 cssFormat: 'scss'
             }
         },
@@ -73,18 +73,18 @@ module.exports = function(grunt) {
                     open: open,
                     port: process.env.PORT || 8080,
                     middleware: [
-                    require('connect-livereload')({
-                        disableCompression: true
-                    }), require('connect-http-please')({
-                        replaceHost: (function(h) {
-                            return h.replace("vtexlocal", environment);
-                        })
-                    }, {
-                        verbose: verbose
-                    }), require('connect-tryfiles')('**', "http://portal." + environment + ".com.br:80", {
-                        cwd: 'build/',
-                        verbose: verbose
-                    }), require('connect')["static"]('./build/'), errorHandler
+                        require('connect-livereload')({
+                            disableCompression: true
+                        }), require('connect-http-please')({
+                            replaceHost: (function(h) {
+                                return h.replace("vtexlocal", environment);
+                            })
+                        }, {
+                            verbose: verbose
+                        }), require('connect-tryfiles')('**', "http://portal." + environment + ".com.br:80", {
+                            cwd: 'build/',
+                            verbose: verbose
+                        }), require('connect')["static"]('./build/'), errorHandler
                     ]
                 }
             }

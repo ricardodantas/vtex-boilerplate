@@ -1,0 +1,61 @@
+/*
+# x-product-list.scss
+
+This the products list file which is required by the *search*, *department* and *category* pages.
+
+All the classes and IDs must be in this file.
+
+**WARNING: All the classes bellow are required.**
+
+***
+*/
+@import  "compass/css3";
+
+
+@import "vtex/department/_advancedSearchFilter.scss";
+@import "vtex/department/_singleDepartmentNavigator.scss";
+@import "vtex/department/_skuRichSelection.scss";
+
+
+/*
+## .x-sidebar
+Filters sidebar element.
+*/
+.x-sidebar {
+    @import "vtex/department/_searchNavigator.scss";
+}
+
+/*
+## .x-sidebar-wrapper
+Sidebar's wrapper element.
+*/
+.x-sidebar-wrapper {
+
+
+}
+
+
+/*
+## .x-search-results
+Search's results (could be a grid or list) element. Into this element the storefront template is included and you can add here the same CSS classes.
+*/
+.x-search-results {
+    @import "vtex/department/_searchResult.scss";
+}
+
+
+/*
+## .x-banner.main
+If the page has a main banner, style here.
+*/
+.x-banner.top{
+}
+
+
+/*
+## .x-history
+The navigation's history tracker element. Usually hidden.
+*/
+.x-history {
+    display: none;
+}

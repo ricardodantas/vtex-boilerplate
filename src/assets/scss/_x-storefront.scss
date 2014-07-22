@@ -1,21 +1,83 @@
+/*
+# _x-storefront.css
+
+This is an include file, for the storefronts and can be included by any file.
+
+All the classes and IDs must be in this file.
+
+**WARNING: All the classes bellow are required.**
+
+***
+
+*/
 @import "compass/css3";
 
+/*
+## .x-storefront
+The storefront wrapper.
+*/
 .x-storefront {
+
+/*
+## .x-item-wrapper
+The storefront's item wrapper.
+*/
     .x-item-wrapper {}
+
+/*
+## .x-image
+Usually the product's picture.
+*/
     .x-image {}
+
+/*
+## .x-title
+The product's title.
+*/
     .x-title {}
+
+
     .x-description-short {}
+
+/*
+## .x-price
+The product's price element wrapper.
+*/
     .x-price {
+
+
+/*
+## .x-old-price
+The product's price from.
+*/
         .x-old-price {
             span {}
         }
+
+/*
+## .x-new-price
+The product's price to (current price).
+*/
         .x-new-price {
             strong {}
         }
+
+/*
+## .x-installment
+The product's prices for installment.
+*/
         .x-installment {
             strong {}
         }
     }
+
+/*
+## .x-button.buy
+The product's buy button.
+
+## .x-button.quickshop
+The product's quickshop button.
+*/
     .x-button {
         &.buy {}
         &.quickshop {}

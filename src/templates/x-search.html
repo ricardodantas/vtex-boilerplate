@@ -3,8 +3,8 @@
 <head>
     <vtex:metaTags />
     <vtex:template id="header-tags" />
-    <link rel="stylesheet" type="text/css" href="/arquivos/x-search.css" />
-    <script type="text/javascript" src="/arquivos/x-search.js"></script>
+    <link rel="stylesheet" type="text/css" href="/arquivos/x-product-list.css" />
+    <script type="text/javascript" src="/arquivos/x-product-list.js"></script>
 </head>
 <body>
 
@@ -19,15 +19,18 @@
                         <vtex.cmc:singleDepartmentNavigator />
                     </div>
                 </sidebar>
+
                 <section class="x-search-results">
-                    <div class="banner-topo"><vtex:contentPlaceHolder id="banner-topo" /></div>
-                    <div class="x-storefront search">
+                    <div class="x-banner top"><vtex:contentPlaceHolder id="banner-topo" /></div>
+
                         <vtex.cmc:searchTitle />
                         <vtex.cmc:searchResult layout="?" itemCount="12" columnCount="4" />
-                    </div><!--vitrine-department-->
+
+                    <div class="x-banner bottom"><vtex:contentPlaceHolder id="banner-rodape" /></div>
                 </section>
 
-                <div class="x-history" style="display:none;"><vtex.cmc:navigationHistory /></div>
+                <div class="x-history"><vtex.cmc:navigationHistory /></div>
+
         </div>
 
     </section><!-- x-wrapper -->

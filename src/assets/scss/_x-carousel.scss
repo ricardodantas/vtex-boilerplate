@@ -1,13 +1,53 @@
+/*
+# _x-carousel.scss
+
+This is an include file, for the carousels and can be included by any file.
+
+The carousel config file. All the classes and IDs must be in this file.
+
+**WARNING: All the classes bellow are required.**
+
+***
+###Element's HTML structure:
+
+````
+<div id="x-carousel">
+    <ul class="x-wrapper">
+        <li class="x-item">...</li>
+    </ul>
+
+    <div class="x-carousel-control">
+        <a href="#" class="x-prev">Previous</a>
+        <a href="#" class="x-next">Next</a>
+    </div>
+</div>
+````
+*/
 @import "compass/css3";
 
+/*
+## #x-carousel
+The whole element's wrapper.
+*/
 .x-carousel {
-    .x-prev {
-    }
 
-    .x-next {
-    }
 }
 
+
+/*
+## #x-item
+The carousel's item element.
+*/
+.x-carousel-item{
+
+}
+
+
+/*
+## #x-carousel-control
+The carousel's control wrapper with the next and prev elements.
+*/
 .x-carousel-control {
+    .x-prev {}
+    .x-next {}
 }
-
