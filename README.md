@@ -10,8 +10,8 @@ A scaffold to quick development's start for Vtex e-commerce platform.
 ***WARNING: NEVER CHANGE OR DELETE FILES (except under assets/scss/custom) IN THIS STRUCTURE!!!***
 
 - **src/**: The main source files. **Never upload the files under this folder.**
-    - **subtemplates/**: All the parts to be included in the templates must be stored here. 
-    - **templates/**: All the main templates must be stored here. 
+    - **subtemplates/**: All the parts to be included in the templates must be stored here.
+    - **templates/**: All the main templates must be stored here.
     - **package.json**: A config file for npm. **If needed, be careful to touch on this file!**
     - **Gruntfile.js**: The automated script to compile, compress and optimize all files. **If needed, be careful to touch on this file!**
     - **assets/**: All the scss, css, javascript, coffeescript and image files must be stored here.
@@ -24,10 +24,24 @@ A scaffold to quick development's start for Vtex e-commerce platform.
 	    	- **config/**: The config files for your custom and "x-.." files.
 	    - **img/**: Image files.
 	    - **js/**: Non compiled javascript, usually for the legacy files.
-	    	
-	    
-    
+
+
+
 ***
 
 - **build/**: This is a generated folder by Grunt and *these are the file which should be used to deploy (uploaded to server)*.
 
+***
+
+## Suggestions, contributions or bugs
+
+Feel free to add an **[issue here](https://github.com/ricardodantas/vtex-boilerplate/issues)** or send me a **[pull request](https://github.com/ricardodantas/vtex-boilerplate/pulls)**.
+
+
+You can also **[fork at github.com](https://github.com/ricardodantas/vtex-boilerplate/fork)**.
+
+***
+
+
+## Download
+ - [Latest version](https://github.com/ricardodantas/vtex-boilerplate/archive/master.zip)

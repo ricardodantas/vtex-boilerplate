@@ -1,5 +1,5 @@
 /*
-# vtex/department/_fullSearchBox.scss
+# vtex/general/_fullSearchBox.scss
 
 This is an include file, which goes into the **x-general.css**.
 
@@ -8,3 +8,16 @@ This is an include file, which goes into the **x-general.css**.
 ***
 
 */
+
+.busca {
+    label {}
+    legend {}
+}
+
+.fulltext-search-box {}
+
+.ui-autocomplete-input {}
+
+.btn-buscar {}
+
+.btn {}

@@ -1,5 +1,5 @@
 /*
-# vtex/department/_breadCrumb.scss
+# vtex/general/_breadCrumb.scss
 
 This is an include file, which goes into the **x-general.css**.
 
@@ -8,3 +8,12 @@ This is an include file, which goes into the **x-general.css**.
 ***
 
 */
+
+.bread-crumb {
+    ul {
+        li {
+            &.last {}
+            a {}
+        }
+    }
+}
