@@ -24,6 +24,20 @@ module.exports = function(grunt) {
         }]
       }
     },
+    coffeelint: {
+      options: {
+        'coffeescript_error':{
+          'level': 'error'
+        },
+        'no_trailing_whitespace': {
+          'level': 'error'
+        },
+        'camel_case_classes':{
+          'level': 'error'
+        }
+      },
+      app: ['src/assets/coffeescript/*.coffee']
+    },
     compass: {
       dist: {
         options: {
@@ -122,7 +136,7 @@ module.exports = function(grunt) {
       },
       coffee: {
         files: ['src/assets/coffeescript/**/*.coffee'],
-        tasks: ['coffee']
+        tasks: ['coffee','coffeelint']
       },
       compass: {
         options: {
@@ -146,7 +160,7 @@ module.exports = function(grunt) {
     }
   };
   tasks = {
-    build: ['clean', 'sprite', 'compass', 'coffee', 'imagemin', 'uglify', 'styledocco'],
+    build: ['clean', 'sprite', 'compass', 'coffee', 'coffeelint', 'imagemin', 'uglify', 'styledocco'],
     test: ['connect:server_test','casperjs'],
     server_test: ['connect:server_test:keepalive'],
     doc: ['styledocco'],
