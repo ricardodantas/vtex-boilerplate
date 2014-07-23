@@ -33,6 +33,29 @@ A scaffold to quick development's start for Vtex e-commerce platform.
 
 ***
 
+## Grunt Tasks
+
+### - Default (grunt):
+
+Start watching *src/* files to recompile SCSS, recompile Coffeescript, optimize images, minify assets file, regenerate Docs and start a localhost webserver on 8080 port.
+
+![image](http://i57.tinypic.com/mic94y.gif)
+
+
+### - Generate/Update docs (grunt doc):
+
+Generate/update *"docs/"* folder.
+
+![image](http://i59.tinypic.com/o9l11v.gif)
+
+### - Tests (grunt test):
+
+Run QA html tests to check the required classes and elements exist.
+
+![image](http://s21.postimg.org/6tdf2zoav/vtex_boilerplate_grunt_test.gif)
+
+
+***
 ## Suggestions, contributions or bugs
 
 Feel free to add an **[issue here](https://github.com/ricardodantas/vtex-boilerplate/issues)** or send me a **[pull request](https://github.com/ricardodantas/vtex-boilerplate/pulls)**.

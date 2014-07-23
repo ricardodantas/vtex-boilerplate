@@ -36,10 +36,10 @@ Sidebar's wrapper element.
 
 
 /*
-## .x-search-results
+## .x-product-list-results
 Search's results (could be a grid or list) element. Into this element the storefront template is included and you can add here the same CSS classes.
 */
-.x-search-results {
+.x-product-list-results {
     @import "vtex/department/_searchResult.scss";
 }
 
