@@ -48,6 +48,7 @@ Generate/update *"docs/"* folder.
 
 ![image](http://i59.tinypic.com/o9l11v.gif)
 
+
 ### - Tests (grunt test):
 
 Run QA html tests to check the required classes and elements exist.
