@@ -1,5 +1,6 @@
 Vtex Boilerplate
 ===============
+[![Build Status](https://travis-ci.org/ricardodantas/vtex-boilerplate.svg?branch=master)](https://travis-ci.org/ricardodantas/vtex-boilerplate)
 
 A scaffold to quick development's start for Vtex e-commerce platform.
 
