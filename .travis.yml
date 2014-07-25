@@ -8,3 +8,5 @@ before_install:
 before_script:
   - phantomjs --version
   - casperjs --version
+notifications:
+  slack: uberdigital:Ces4rrJQyR0IGiBV9XCnicop
