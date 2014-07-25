@@ -16,8 +16,10 @@
         "grunt-contrib-connect": "~0.7.1",
         "grunt-contrib-copy": "*",
         "grunt-contrib-imagemin": "^0.7.1",
+        "grunt-contrib-nodeunit": "0.1.2",
         "grunt-contrib-uglify": "*",
         "grunt-contrib-watch": "~0.5.1",
+        "grunt-ghost": "1.0.8",
         "grunt-spritesmith": "^1.26.0",
         "grunt-styledocco": "^0.1.4",
         "jpegtran-bin": "0.2.0"
@@ -35,7 +37,7 @@
         "url": "git://github.com/ricardodantas/vtex-boilerplate.git"
     },
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "grunt test"
     },
     "version": "1.0.0"
 }
