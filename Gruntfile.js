@@ -67,7 +67,8 @@ module.exports = function(grunt) {
           important: true,
           'adjoining-classes': false,
           ids: false,
-          'zero-units': false
+          'zero-units': false,
+          'duplicate-properties': true
         },
         src: ['build/assets/css/**/*.css']
       }
@@ -167,7 +168,7 @@ module.exports = function(grunt) {
           livereload: false
         },
         files: ['src/assets/scss/**/*.scss'],
-        tasks: ['compass', 'styledocco']
+        tasks: ['compass', 'csslint', 'styledocco']
       },
       images: {
         files: ['src/assetsimg/**/*.{png,jpg,gif}'],
