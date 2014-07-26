@@ -105,6 +105,24 @@ module.exports = function(grunt) {
         cssFormat: 'scss'
       }
     },
+    webfont: {
+      icons: {
+        src: 'src/assets/img/icons/*.svg',
+        dest: 'build/assets/fonts',
+        destCss: 'src/assets/scss',
+        options: {
+          syntax: 'bootstrap',
+          font: 'x-icon',
+          engine: 'node',
+          stylesheet: 'scss',
+          relativeFontPath: '../fonts',
+          templateOptions: {
+            classPrefix: 'x-icon-',
+            mixinPrefix: 'x-icon-'
+          }
+        }
+      }
+    },
     casperjs: {
       options: {
         async: {
@@ -186,10 +204,11 @@ module.exports = function(grunt) {
   };
 
   tasks = {
-    build: ['clean', 'sprite', 'compass', 'csscss', 'csslint', 'coffee', 'coffeelint', 'imagemin', 'uglify', 'styledocco'],
+    build: ['clean', 'sprite', 'compass', 'csscss', 'csslint', 'coffee', 'coffeelint', 'imagemin', 'uglify', 'styledocco', 'webfont'],
     test: ['connect:server_test', 'casperjs'],
     server_test: ['connect:server_test:keepalive'],
     doc: ['styledocco'],
+    'bower': ['bower'],
     "default": ['build', 'connect', 'watch'],
     devmin: ['build', 'min', 'connect:http:keepalive']
   };
