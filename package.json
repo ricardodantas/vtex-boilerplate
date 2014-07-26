@@ -1,43 +1,45 @@
 {
-    "accountName": "test",
-    "description": "",
-    "devDependencies": {
-        "connect": "2.13.1",
-        "connect-http-please": "^0.1.1",
-        "connect-livereload": "git://github.com/gadr/connect-livereload#7f4a0b7",
-        "connect-tryfiles": "^0.2.1",
-        "grunt": "^0.4.2",
-        "grunt-casperjs": "^1.5.0",
-        "grunt-coffeelint": "0.0.10",
-        "grunt-contrib-clean": "~0.5.0",
-        "grunt-contrib-coffee": "*",
-        "grunt-contrib-compass": "*",
-        "grunt-contrib-concat": "~0.3.0",
-        "grunt-contrib-connect": "~0.7.1",
-        "grunt-contrib-copy": "*",
-        "grunt-contrib-imagemin": "^0.7.1",
-        "grunt-contrib-nodeunit": "0.1.2",
-        "grunt-contrib-uglify": "*",
-        "grunt-contrib-watch": "~0.5.1",
-        "grunt-ghost": "1.0.8",
-        "grunt-spritesmith": "^1.26.0",
-        "grunt-styledocco": "^0.1.4",
-        "jpegtran-bin": "0.2.0"
-    },
-    "keywords": [
-        "grunt",
-        "coffee",
-        "livereload",
-        "vtex"
-    ],
-    "license": "MIT",
-    "name": "VtexBoilerplate",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/ricardodantas/vtex-boilerplate.git"
-    },
-    "scripts": {
-        "test": "grunt test"
-    },
-    "version": "1.0.0"
+  "accountName": "test",
+  "description": "",
+  "devDependencies": {
+    "connect": "2.13.1",
+    "connect-http-please": "^0.1.1",
+    "connect-livereload": "git://github.com/gadr/connect-livereload#7f4a0b7",
+    "connect-tryfiles": "^0.2.1",
+    "grunt": "^0.4.2",
+    "grunt-casperjs": "^1.5.0",
+    "grunt-coffeelint": "0.0.10",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-coffee": "*",
+    "grunt-contrib-compass": "*",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-connect": "~0.7.1",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-imagemin": "^0.7.1",
+    "grunt-contrib-nodeunit": "^0.4.1",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "~0.5.1",
+    "grunt-ghost": "^1.1.0",
+    "grunt-spritesmith": "^1.26.0",
+    "grunt-styledocco": "^0.1.4",
+    "jpegtran-bin": "0.2.0",
+    "grunt-csscss": "^0.6.2",
+    "grunt-contrib-csslint": "^0.2.0"
+  },
+  "keywords": [
+    "grunt",
+    "coffee",
+    "livereload",
+    "vtex"
+  ],
+  "license": "MIT",
+  "name": "VtexBoilerplate",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ricardodantas/vtex-boilerplate.git"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "version": "1.0.0"
 }

@@ -26,7 +26,7 @@ The carousel config file. All the classes and IDs must be in this file.
 @import "compass/css3";
 
 /*
-## #x-carousel
+## .x-carousel
 The whole element's wrapper.
 */
 .x-carousel {
@@ -35,7 +35,7 @@ The whole element's wrapper.
 
 
 /*
-## #x-item
+## .x-item
 The carousel's item element.
 */
 .x-carousel-item{
@@ -44,7 +44,7 @@ The carousel's item element.
 
 
 /*
-## #x-carousel-control
+## .x-carousel-control
 The carousel's control wrapper with the next and prev elements.
 */
 .x-carousel-control {

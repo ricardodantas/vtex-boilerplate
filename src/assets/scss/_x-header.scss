@@ -31,20 +31,20 @@ Header main file. All the classes and IDs must be in this file.
 
 
 /*
-## #x-header
+## .x-header
 The main header element.
 
 ````
 <header id="x-header"></header>
 ````
 */
-header#x-header{
+header.x-header{
 
 }
 
 
 /*
-## #x-header-wrapper
+## .x-header-wrapper
 
 ````
 <header id="x-header">
@@ -52,7 +52,7 @@ header#x-header{
 </header>
 ````
 */
-#x-header-wrapper{
+.x-header-wrapper{
 
 }
 
@@ -126,7 +126,7 @@ For the store logo style.
 
 
 /*
-## #x-menu
+## .x-menu
 The main menu.
 
 ````
@@ -137,7 +137,7 @@ The main menu.
 </header>
 ````
 */
-#x-menu{
+.x-menu{
 
 }
 
@@ -145,7 +145,7 @@ The main menu.
 
 
 /*
-## #x-header-search
+## .x-header-search
 The header's search element.
 
 ````
@@ -162,7 +162,7 @@ The header's search element.
 
 
 /*
-## #x-header-cart
+## .x-header-cart
 The header's cart element.
 
 ````
@@ -175,6 +175,6 @@ The header's cart element.
 </header>
 ````
 */
-#x-header-cart{
+.x-header-cart{
 
 }
