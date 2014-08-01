@@ -14,7 +14,14 @@ This is an include file, which goes into the **x-general.css**. All the classes 
 */
 @import "config/footer";
 
+/*
+## .x-footer
+The main footer element.
 
+````
+<footer class="x-footer"></footer>
+````
+*/
 .x-footer {
 
 /*
