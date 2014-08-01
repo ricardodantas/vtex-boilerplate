@@ -79,7 +79,9 @@ The product's buy button.
 The product's quickshop button.
 */
     .x-button {
-        &.buy {}
+        &.buy {
+
+        }
         &.quickshop {}
     }
 }
