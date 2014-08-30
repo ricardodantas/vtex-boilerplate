@@ -11,7 +11,6 @@
     "grunt-coffeelint": "0.0.10",
     "grunt-contrib-clean": "~0.5.0",
     "grunt-contrib-coffee": "*",
-    "grunt-contrib-compass": "*",
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-connect": "~0.7.1",
     "grunt-contrib-copy": "*",
@@ -25,8 +24,8 @@
     "jpegtran-bin": "0.2.0",
     "grunt-csscss": "^0.6.2",
     "grunt-contrib-csslint": "^0.2.0",
-    "grunt-webfont": "^0.4.4"
-
+    "grunt-webfont": "^0.4.4",
+    "grunt-contrib-sass": "^0.8.1"
   },
   "keywords": [
     "grunt",

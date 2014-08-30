@@ -2,3 +2,6 @@ build/
 .sass-cache/
 node_modules/
 .DS_Store
+docs/bourbon-*
+docs/custom-reset
+docs/neat-*

@@ -38,16 +38,47 @@ module.exports = function(grunt) {
       },
       app: ['src/assets/coffeescript/*.coffee']
     },
-    compass: {
+    sass: {
+      dev: {
+        options: {
+          sourcemap: "auto",
+          update: true,
+          debugInfo: true,
+          style: 'compressed'
+        },
+        files: [{
+          expand: true,
+          cwd: 'src/assets/scss',
+          src: ['*.scss'],
+          dest: 'build/assets/css/',
+          ext: '.css'
+        }]
+      },
       dist: {
         options: {
-          sassDir: 'src/assets/scss/',
-          cssDir: 'build/assets/css/',
-          imagesDir: 'src/assets/img/',
-          environment: 'production'
-        }
+          sourcemap: "none",
+          update: false,
+          style: 'compressed'
+        },
+        files: [{
+          expand: true,
+          cwd: 'src/assets/scss',
+          src: ['*.scss'],
+          dest: 'build/assets/css/',
+          ext: '.css'
+        }]
       }
     },
+    // compass: {
+    //   dist: {
+    //     options: {
+    //       sassDir: 'src/assets/scss/',
+    //       cssDir: 'build/assets/css/',
+    //       imagesDir: 'src/assets/img/',
+    //       environment: 'production'
+    //     }
+    //   }
+    // },
     csscss: {
       options: {
         colorize: true,
@@ -67,8 +98,11 @@ module.exports = function(grunt) {
           important: true,
           'adjoining-classes': false,
           ids: false,
+          'empty-rules':false,
           'zero-units': false,
-          'duplicate-properties': true
+          'duplicate-properties': true,
+          'universal-selector': false,
+          'box-sizing':false
         },
         src: ['build/assets/css/**/*.css']
       }
@@ -147,18 +181,18 @@ module.exports = function(grunt) {
           open: open,
           port: process.env.PORT || 8080,
           middleware: [
-            require('connect-livereload')({
-              disableCompression: true
-            }), require('connect-http-please')({
-              replaceHost: (function(h) {
-                return h.replace("vtexlocal", environment);
-              })
-            }, {
-              verbose: verbose
-            }), require('connect-tryfiles')('**', "http://portal." + environment + ".com.br:80", {
-              cwd: 'build/',
-              verbose: verbose
-            }), require('connect')["static"]('./build/'), errorHandler
+          require('connect-livereload')({
+            disableCompression: true
+          }), require('connect-http-please')({
+            replaceHost: (function(h) {
+              return h.replace("vtexlocal", environment);
+            })
+          }, {
+            verbose: verbose
+          }), require('connect-tryfiles')('**', "http://portal." + environment + ".com.br:80", {
+            cwd: 'build/',
+            verbose: verbose
+          }), require('connect')["static"]('./build/'), errorHandler
           ]
         }
       }
@@ -204,12 +238,12 @@ module.exports = function(grunt) {
   };
 
   tasks = {
-    build: ['clean', 'sprite', 'compass', 'csscss', 'csslint', 'coffee', 'coffeelint', 'imagemin', 'uglify', 'styledocco', 'webfont'],
+    build: ['clean', 'sprite', 'sass:dev', 'csscss', 'csslint', 'coffee', 'coffeelint', 'imagemin', 'uglify', 'styledocco', 'webfont'],
     test: ['connect:server_test', 'casperjs'],
     server_test: ['connect:server_test:keepalive'],
     doc: ['styledocco'],
     'bower': ['bower'],
-    "default": ['build', 'connect', 'watch'],
+    "default": ['build', 'connect:server_test:keepalive', 'watch'],
     devmin: ['build', 'min', 'connect:http:keepalive']
   };
   grunt.initConfig(config);

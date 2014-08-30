@@ -9,7 +9,12 @@ All the classes and IDs must be in this file.
 
 ***
 */
-@import  "compass/css3";
+
+
+/*
+- Includes frameworks.
+*/
+@import "x-frameworks";
 
 
 @import "vtex/department/_advancedSearchFilter.scss";

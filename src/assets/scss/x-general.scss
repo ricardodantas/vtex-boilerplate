@@ -1,11 +1,21 @@
 /* # x-general.scss
 
+- Includes frameworks.
+*/
+@import "x-frameworks";
+
+/*
+- Includes frameworks.
+*/
+@import "custom/reset";
+
+/*
+
 - Includes footer, header and all general classes.
 
 */
 @import "x-header";
 @import "x-footer";
-
 
 
 /*
