@@ -14,18 +14,19 @@
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-connect": "~0.7.1",
     "grunt-contrib-copy": "*",
+    "grunt-contrib-csslint": "^0.2.0",
     "grunt-contrib-imagemin": "^0.7.1",
     "grunt-contrib-nodeunit": "^0.4.1",
+    "grunt-contrib-sass": "^0.8.1",
     "grunt-contrib-uglify": "*",
     "grunt-contrib-watch": "~0.5.1",
+    "grunt-csscss": "^0.6.2",
     "grunt-ghost": "^1.1.0",
+    "grunt-sass-convert": "^0.2.0",
     "grunt-spritesmith": "^1.26.0",
     "grunt-styledocco": "^0.1.4",
-    "jpegtran-bin": "0.2.0",
-    "grunt-csscss": "^0.6.2",
-    "grunt-contrib-csslint": "^0.2.0",
     "grunt-webfont": "^0.4.4",
-    "grunt-contrib-sass": "^0.8.1"
+    "jpegtran-bin": "0.2.0"
   },
   "keywords": [
     "grunt",

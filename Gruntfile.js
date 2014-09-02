@@ -11,7 +11,8 @@ module.exports = function(grunt) {
   };
   config = {
     clean: {
-      main: ['build']
+      main: ['build'],
+      css_converted: ["src/assets/css/**/*.css"]
     },
     coffee: {
       main: {
@@ -38,6 +39,21 @@ module.exports = function(grunt) {
       },
       app: ['src/assets/coffeescript/*.coffee']
     },
+
+    'sass-convert': {
+
+      options: {
+        indent: 2,
+        from: 'css',
+        to: 'scss'
+      },
+      files: {
+        filePrefix: '_',
+        src: ['src/assets/css/**/*.css'],
+        dest: './src/assets/scss/custom/'
+      },
+    },
+
     sass: {
       dev: {
         options: {
@@ -239,6 +255,7 @@ module.exports = function(grunt) {
 
   tasks = {
     build: ['clean', 'sprite', 'sass:dev', 'csscss', 'csslint', 'coffee', 'coffeelint', 'imagemin', 'uglify', 'styledocco', 'webfont'],
+    css2scss: ['sass-convert','clean:css_converted'],
     test: ['connect:server_test', 'casperjs'],
     server_test: ['connect:server_test:keepalive'],
     doc: ['styledocco'],
