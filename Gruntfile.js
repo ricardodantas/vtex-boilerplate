@@ -135,6 +135,15 @@ module.exports = function(grunt) {
           dest: 'build/assets/js/',
           ext: '.js'
         }]
+      },
+      legacy: {
+        files: [{
+          expand: true,
+          cwd: 'src/assets/js/',
+          src: ['*.js', ],
+          dest: 'build/assets/js/',
+          ext: '.js'
+        }]
       }
     },
     imagemin: {
@@ -226,6 +235,10 @@ module.exports = function(grunt) {
     watch: {
       options: {
         livereload: 1337
+      },
+      javascript: {
+        files: ['src/assets/js/**/*.js'],
+        tasks: ['uglify:legacy']
       },
       coffee: {
         files: ['src/assets/coffeescript/**/*.coffee'],
