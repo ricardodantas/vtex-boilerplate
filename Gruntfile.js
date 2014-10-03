@@ -254,7 +254,7 @@ module.exports = function(grunt) {
   };
 
   tasks = {
-    build: ['clean', 'sprite', 'sass:dev', 'csscss', 'csslint', 'coffee', 'coffeelint', 'imagemin', 'uglify', 'styledocco', 'webfont'],
+    build: ['clean:main', 'sprite', 'sass:dev', 'csscss', 'csslint', 'coffee', 'coffeelint', 'imagemin', 'uglify', 'styledocco', 'webfont'],
     css2scss: ['sass-convert','clean:css_converted'],
     test: ['connect:server_test', 'casperjs'],
     server_test: ['connect:server_test:keepalive'],
