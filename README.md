@@ -3,7 +3,7 @@ Vtex Boilerplate
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/ricardodantas/vtex-boilerplate?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status](https://travis-ci.org/ricardodantas/vtex-boilerplate.svg?branch=master)](https://travis-ci.org/ricardodantas/vtex-boilerplate)
 
-A scaffold to quick development's start for Vtex e-commerce platform.
+A scaffold for a quick Vtex e-commerce platform development.
 
 ***
 
