@@ -39,21 +39,17 @@ A scaffold for a quick Vtex e-commerce platform development.
 
 Start watching *src/* files to recompile SCSS, recompile Coffeescript, optimize images, minify assets file, regenerate Docs and start a localhost webserver on 8080 port.
 
-![image](http://i57.tinypic.com/mic94y.gif)
 
 
 ### - Generate/Update docs (grunt doc):
 
 Generate/update *"docs/"* folder.
 
-![image](http://i59.tinypic.com/o9l11v.gif)
 
 
 ### - Tests (grunt test):
 
 Run QA html tests to check the required classes and elements exist.
-
-![image](http://s21.postimg.org/6tdf2zoav/vtex_boilerplate_grunt_test.gif)
 
 
 ***
